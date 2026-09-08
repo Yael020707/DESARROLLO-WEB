@@ -1,0 +1,24 @@
+
+body
+{
+    background-color: rgb(255, 249, 249);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace with your desired weight, e.g., 400, 700 */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+div{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    .sub-header {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+}
