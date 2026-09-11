@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tabla de comandos de la consola de Linux para navegación e inspección de directorios.">
+    <title>DevDocs | Comandos Linux</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/terminal.css">
+</head>
+<body>
+
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="img/logo.svg" alt="Logo de DevDocs TICs">
+                <h2>DevDocs</h2>
+            </div>
+            <nav class="sidebar-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="git.html">Git </a></li>
+                    <li><a href="linux.html" class="active">Comandos Linux</a></li>
+                    <li><a href="html-css.html">HTML5 & CSS3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="doc-header">
+                <h1>Terminal de Linux</h1>
+                <p>Navegación de directorios y administración de archivos del sistema.</p>
+            </header>
+
+            <section class="doc-section">
+                <h2>Jerarquía del Sistema de Archivos</h2>
+                <img src="img/linux-tree.svg" alt="Diagrama de árbol que muestra la estructura del sistema de archivos en Linux desde la raíz /" class="content-img">
+
+                <h2>Comandos Esenciales</h2>
+                <table class="doc-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Comando</th>
+                            <th scope="col">Descripción Técnica</th>
+                            <th scope="col">Ejemplo de Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>pwd</code></td>
+                            <td>Muestra la ruta absoluta del directorio de trabajo actual.</td>
+                            <td><code>pwd</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>ls -la</code></td>
+                            <td>Lista el contenido del directorio incluyendo permisos y archivos ocultos.</td>
+                            <td><code>ls -la /var/www</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>mkdir</code></td>
+                            <td>Crea una nueva carpeta dentro del directorio especificado.</td>
+                            <td><code>mkdir mi-proyecto</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>chmod</code></td>
+                            <td>Modifica los permisos de lectura, escritura y ejecución de un archivo.</td>
+                            <td><code>chmod 755 script.sh</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            
+        </main>
+    </div>
+
+</body>
+</html>
