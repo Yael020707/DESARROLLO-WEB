@@ -148,7 +148,6 @@ body {
     text-align: center;
 }
 
-/* Adaptación Responsiva */
 @media (max-width: 48rem) { /* 768px */
     .layout-container {
         flex-direction: column;
