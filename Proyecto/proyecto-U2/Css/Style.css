@@ -1,23 +1,131 @@
-*{
-margin: auto;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .navlista-enlaces {
-    display: flex;            /* Activa el diseño en fila (horizontal) */
-    flex-direction: row;      /* Asegura que se acomoden en fila (es el valor por defecto) */
-    justify-content: center;  /* Centra los enlaces (puedes usar 'space-between' para separarlos) */
-    gap: 20px;                /* Controla el espacio exacto de separación entre cada enlace */
-    background-color: #f0f0f0;/* Fondo opcional para el menú */
-    padding: 15px;            /* Espacio interno del contenedor */
+    display: flex;           
+    flex-direction: row;      
+    justify-content: center;
+    gap: 20px;              
+    background-color: #f0f0f0;
+    padding: 15px;          
 }
 
 .navlista-enlaces a {
-    text-decoration: none;    /* Quita la línea de subrayado de los enlaces */
-    color: #333;              /* Color del texto */
-    font-family: sans-serif;  /* Tipo de letra */
+    text-decoration: none;   
+    color: #333;            
+    font-family: sans-serif; 
     font-weight: bold;
 }
 
 .navlista-enlaces a:hover {
-    color: #007BFF;           /* Cambia de color cuando pasas el cursor por encima */
+    color: #007BFF;  }        
+/* ==========================================
+   RESET Y FUENTES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f5f9;
+  color: #334155;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==========================================
+   CABECERA Y NAVEGACIÓN
+   ========================================== */
+.header {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #0284c7;
+}
+
+/* AJUSTE DE TAMAÑO DEL LOGO */
+.logo-container .logo {
+  max-height: 100px; /* Controla la altura del logo */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-container .logo:hover {
+  transform: scale(1.05); /* Efecto zoom sutil al pasar el mouse */
+}
+
+.navlista-enlaces {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.navlista-enlaces a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navlista-enlaces a:hover {
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+/* ==========================================
+   ESTRUCTURA Y FOOTER
+   ========================================== */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+}
+
+footer {
+  background-color: #090d16;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.8rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid #1e293b;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .navlista-enlaces {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .logo-container .logo {
+    max-height: 40px;
+  }
 }

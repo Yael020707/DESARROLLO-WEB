@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verifica la cobertura y factibilidad técnica de nuestro servicio de internet inalámbrico (WISP).">
+  <meta name="author" content="Kevin Yael Barron Arce">
+  <title>Cobertura - proyecto-U2</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Css/Style.css">
+  <link rel="stylesheet" href="../Css/StyleFull.css">
+
+  <!-- Fuente de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Logo y Navegación -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="../img/logo.png" alt="Logo del proyecto" class="logo">
+    </div>
+
+    <nav class="nav">
+      <ul class="navlista-enlaces">
+        <li><a href="../html/index.html">Inicio</a></li>
+        <li><a href="../html/Preciosyinstalacion.html">Precios e instalación</a></li>
+        <li><a href="../html/redesYcontenido.html">Más sobre nosotros</a></li>
+        <li><a href="../html/contacto.html">Contacto</a></li>
+        <li><a href="../html/cobertura.html">Cobertura</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="cobertura-seccion">
+    <div class="tituloP">
+      <h1>Zonas de Cobertura y Factibilidad</h1>
+    </div>
+
+    <!-- Verificador de Factibilidad -->
+    <section class="verificador-cobertura">
+      <h2>Consulta de Factibilidad Técnica</h2>
+      <p>Al ser un servicio inalámbrico (WISP), requerimos línea de vista directa hacia nuestras torres repetidoras. Ingresa tu ubicación para comprobar si contamos con señal en tu zona.</p>
+
+      <!-- Mensaje dinámico de respuesta en el DOM -->
+      <div id="resultado-cobertura" class="resultado-box" style="display: none; margin-top: 15px;"></div>
+    </section>
+
+    <!-- Lista de Zonas Atendidas -->
+    <section class="zonas-lista">
+      <h2>Sectores con Cobertura Activa</h2>
+      <div class="plans-container">
+        <article class="plan-card">
+          <h3>Zona Urbana</h3>
+          <p>Cobertura del 98% en colonias centrales con antenas de alta densidad.</p>
+          <ul>
+            <li>Colonia Centro</li>
+            <li>Fraccionamiento Los Pinos</li>
+            <li>Barrio San Antonio</li>
+          </ul>
+        </article>
+
+        <article class="plan-card">
+          <h3>Zona Periurbana</h3>
+          <p>Conexión estable mediante enlaces de frecuencia 5 GHz.</p>
+          <ul>
+            <li>Sector Industrial</li>
+            <li>Colonia El Mirador</li>
+            <li>Valle Verde</li>
+          </ul>
+        </article>
+
+        <article class="plan-card">
+          <h3>Comunidades Rurales</h3>
+          <p>Infraestructura dedicada con repetidoras de alto alcance.</p>
+          <ul>
+            <li>Rancho Alegre</li>
+            <li>Ejido San Rafael</li>
+            <li>La Esperanza</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Requisitos para la instalación WISP -->
+    <section class="requisitos-tecnicos">
+      <h2>¿Cómo funciona la instalación inalámbrica?</h2>
+      <ol>
+        <li><strong>Inspección Técnica:</strong> Un técnico acude a tu domicilio para validar la línea de vista con la torre más cercana.</li>
+        <li><strong>Instalación de Antena Receptora:</strong> Se coloca una antena CPE de exterior en el techo o mástil.</li>
+        <li><strong>Cableado y Router Wi-Fi:</strong> Se baja un cable de red UTP de uso rudo hasta el interior de tu casa y se configura el router.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Kevin Yael Barron Arce. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/funtion.js"></script>
+</body>
+</html>
