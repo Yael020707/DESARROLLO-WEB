@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Inter';
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url('img/4DSM G2/4DSM G2/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+:root {
+    --color-bg-principal: #070B12;
+    --color-bg-secundario: #0E1520;
+    --color-texto-principal: #A6B2C2;
+    --color-acento: #D4F28A;
+    --color-texto-secundario: #748398;
+    --color-texto-claro: #EEF2EC;
+    
+    --border-card: rgba(255, 255, 255, 0.05);
+    --border-hover: rgba(212, 242, 138, 0.3);
+
+    --font-main: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-principal);
+    color: var(--color-texto-principal);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+}
+
+.main-container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.header-section {
+    max-width: 650px;
+    margin-bottom: 2.5rem;
+}
+
+.category-tag {
+    color: var(--color-acento);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.main-title {
+    color: var(--color-texto-claro);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.main-subtitle {
+    color: var(--color-texto-principal);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.planets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+    .planets-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .planets-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.planet-card {
+    background-color: var(--color-bg-secundario);
+    border: 1px solid var(--border-card);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+}
+
+.planet-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--border-hover);
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 242, 138, 0.08);
+}
+
+.planet-image-wrapper {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 12px;
+}
+
+.planet-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Transición suave del desenfoque */
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.6)) blur(0px); /* Sin desenfoque por defecto */
+}
+
+.planet-card:hover .planet-img {
+    transform: scale(1.08) rotate(5deg);
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.6)) blur(6px); /* Desenfoque de 6px al pasar el mouse */
+}

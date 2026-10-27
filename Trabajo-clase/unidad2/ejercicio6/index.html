@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="practica 6 - Chevrolet">
+  <meta name="author" content="Kevin Yael Barron Arce">
+  <title>Clase131026 - Chevrolet</title>
+  <link rel="stylesheet" href="Style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- principio -->
+  <header class="main-header">
+    <div class="nav-container">
+      <h1 class="logo">Chevrolet<span>.</span></h1>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#contenido">Contenido</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- inicio -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <h2>Encuentra tu próximo vehículo</h2>
+        <p>Bienvenido a nuestra página web oficial de exhibición.</p>
+      </div>
+    </section>
+
+    <!--  CONTENIDO -->
+    <section id="contenido" class="content-section">
+      <article class="info-card">
+        <h2>Acerca de nosotros</h2>
+        <p>Líderes en innovación automotriz, ofreciendo seguridad, potencia y tecnología en cada modelo.</p>
+      </article>
+      <article class="info-card">
+        <h2>Servicios</h2>
+        <p>Mantenimiento especializado, refacciones originales y asesoría de financiamiento a tu medida.</p>
+      </article>
+    </section>
+
+    <!--  CONTACTO -->
+    <section id="contacto" class="contact-section">
+      <article class="form-card">
+        <h2>Contacto</h2>
+        <p class="form-subtitle">Escríbenos y un asesor te atenderá a la brevedad.</p>
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="input-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Correo electrónico</label>   
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="input-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar mensaje</button>
+        </form>
+      </article>
+<!--  MAPA -->
+      <article class="map-card">
+        <h2>Ubicación</h2>
+        <p class="map-subtitle">Visita nuestra sala de exhibición.</p>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://share.google/svJh5kSkZAzQZnWxb" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </article>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+      <p>&copy; 2026 Kevin Yael Barron Arce. Todos los derechos reservados.</p>   
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

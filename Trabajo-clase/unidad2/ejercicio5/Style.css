@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contenedor Responsivo */
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+#mainTitle {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.btn-change {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.grid-top, .grid-bottom {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.grid-top {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid-bottom {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+/* Tarjetas */
+.card {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  position: relative;
+}
+
+.img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Título 1, Cambiar la imagen */
+.card-hover-change-img .img-hover {
+  display: none;
+}
+.card-hover-change-img:hover .img-default {
+  display: none;
+}
+.card-hover-change-img:hover .img-hover {
+  display: block;
+}
+
+/* Título 2, Girada 45° */
+.img-rotate {
+  transform: rotate(45deg);
+}
+.card-hover-rotate:hover .img-rotate {
+  transform: rotate(0deg);
+}
+
+
+/* Título 4: Borde */
+.card-hover-border {
+  border: 2px solid pink;
+}
+.card-hover-border:hover {
+  border: 1px solid red;
+}
+
+/* JS  */
+.state-changed #mainTitle {
+  color: #ff5722;
+}
+
+.state-changed .card {
+  background-color: #e3f2fd;
+}
+
+.state-changed .img-container img {
+  display: none !important;
+}
+
+
+
+/* Moviles */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .dashboard {
+    padding: 15px;
+  }
+
+  .header {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  #mainTitle {
+    font-size: 1.5rem;
+  }
+
+  .grid-top, .grid-bottom {
+    grid-template-columns: 1fr;
+  }
+}

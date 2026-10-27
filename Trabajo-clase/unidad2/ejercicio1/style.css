@@ -4,6 +4,10 @@ header{
 
 }
 
+header img{
+    height: 5rem;
+}
+
 .padre{
     display: flex;
     justify-content: space-between;
@@ -25,7 +29,7 @@ header{
 
 .hijo img{
     width: 100%;
-    border:5px dotted #201a72;
+    border:4px dotted #201a72;
 }
 
 .hijo h2{
@@ -38,7 +42,7 @@ header{
     text-align: center;
     margin: 2.5rem;
     line-height: 3.5rem;
-    color: rgb(239, 241, 241);
+    color: rgb(8, 44, 44);
 }
 
 .hijo a{
@@ -65,6 +69,18 @@ header{
 }
 
 .hijo:hover{
+    cursor: pointer;
     transform: 1.5s;
     border-color: #cfb53b;
+}
+
+header a{
+    text-decoration: none;
+    color: #cfb53b;
+    font-size: 1.5rem;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: #201a72;
 }

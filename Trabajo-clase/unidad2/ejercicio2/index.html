@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera práctica de JavaScript y CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <form class="main-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+        <br>
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular" placeholder="Ingresa tu celular">
+        <br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <header class="main-header">
+        <h1 class="page-title">Mi primera práctica de JavaScript y CSS</h1>
+        <button id="btnToggleTheme" class="btn-primary">Dale click</button>
+    </header>
+
+    <main class="grid-container">
+        <div class="color-row">
+            <div class="box box-red"></div>
+            <div class="box box-magenta"></div>
+            <div class="box box-orange"></div>
+            <div class="box box-blue"></div>
+            <div class="box box-brown"></div>
+            <div class="box box-green"></div>
+        </div>
+        
+        <div class="sub-row">
+            <div class="box box-yellow"></div>
+        </div>
+    </main>
+
+    <footer class="footer-controls">
+        <button id="btnChangeColors" class="btn-secondary">Cambia los colores</button>
+    </footer>
+
+    <script src="funtion.js"></script>
+</body>
+</html>

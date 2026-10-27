@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #edeff1;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.main-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* importante para las imagenes */
+}
+
+p { margin-bottom: 15px; line-height: 1.6; text-align: justify; }
+
+/* 1. TÍTULO: Cuando pase el mouse desaparece el texto */
+.title {
+  font-size: 2.5em;
+  transition: opacity 0.3s ease;
+}
+.title:hover { opacity: 0; cursor: pointer; }
+
+/* MAIN LAYOUT */
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.main > div {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* 2. Cada div cuando pase el mouse debe cambiar de color de fondo */
+.main > div:hover { background-color: #2a2a2a; }
+
+/* 3. DIV 1 - Imagen 1: Sombra roja, desenfoque y blanco y negro */
+.KYBA-div1:hover img {
+  box-shadow: 0 0 15px 8px rgba(255, 0, 0, 0.9);
+  filter: blur(2px) grayscale(100%);
+}
+
+/* 4. DIV 3 - Imagen 2: Agrandar 120% PC / Reducir 20% celular */
+.KYBA-div3 img:hover { transform: scale(1.2); }
+@media (max-width: 600px) {
+  .KYBA-div3 img:hover { transform: scale(0.8); }
+}
+
+/* 5. DIV 4: Negrita al pasar el mouse */
+.KYBA-div4:hover { font-weight: bold; }
+
+/* CLASE JS: Fondo rojo - con hover para que no se quite */
+.fondo-rojo {
+  background-color: red !important;
+  color: white !important;
+}
+.fondo-rojo:hover {
+  background-color: red !important;
+}
+
+.btn-secondary {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
