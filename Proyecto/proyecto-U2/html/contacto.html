@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto de la Unidad 2">
+  <meta name="author" content="Kevin Yael Barron Arce">
+  <title>Contacto - proyecto-U2</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Css/Style.css">
+  <link rel="stylesheet" href="../Css/StyleFull.css">
+
+  <!-- Fuente de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Logo y Navegación -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="../Img/logo.png" alt="Logo del proyecto" class="logo">
+    </div>
+
+    <nav class="nav">
+      <ul class="navlista-enlaces">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Preciosyinstalacion.html">Precios e instalación</a></li>
+        <li><a href="redesYcontenido.html">Más sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="contacto-seccion">
+
+    <!-- Información de Contacto -->
+    <div class="informacion-contacto">
+      <h2>Información de Contacto</h2>
+      
+      <div class="dato-contacto">
+        <h3>Correo Electrónico</h3>
+        <p>soporte@tuwisp.com</p>
+      </div>
+
+      <div class="dato-contacto">
+        <h3>Teléfono de Atención</h3>
+        <p>+52 55 1234 5678</p>
+      </div>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="formulario-container">
+      <h2>Escríbenos</h2>
+      <p>Déjanos tus datos y te responderemos a la brevedad para brindarte información de nuestros planes.</p>
+
+      <form action="#" method="POST" class="formulario-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Número de teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required>
+        </div>
+
+        <div class="campo">
+          <label for="plan">Plan de interés</label>
+          <select id="plan" name="plan">
+            <option value="">Selecciona un plan (Opcional)</option>
+            <option value="plan-a">Plan A (2 a 4 Mb)</option>
+            <option value="plan-b">Plan B (5 a 6 Mb)</option>
+            <option value="plan-c">Plan C (6 a 8 Mb)</option>
+            <option value="plan-d">Plan D (8 a 10 Mb)</option>
+            <option value="plan-e">Plan E (12 a 14 Mb)</option>
+            <option value="plan-f">Plan F (20 a 22 Mb)</option>
+            <option value="plan-g">Plan G (30 a 32 Mb)</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje o Dirección para cobertura</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta o tu ubicación para verificar cobertura..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Kevin Yael Barron Arce. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
