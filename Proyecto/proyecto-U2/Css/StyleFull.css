@@ -1,6 +1,6 @@
-/* ==========================================
-   INICIO (index.html)
-   ========================================== */
+
+
+/* Seccion inicio */
 .acerca, .por-que-nosotros, .mision, .vision, .valores {
   background: #ffffff;
   padding: 2.5rem;
@@ -10,6 +10,7 @@
   border: 1px solid #e2e8f0;
 }
 
+/* Titulo inicio */
 .acerca h1, .por-que-nosotros h1 {
   color: #0f172a;
   font-size: 1.8rem;
@@ -18,22 +19,26 @@
   padding-left: 0.8rem;
 }
 
+/* Subtitulo inicio */
 .mision h2, .vision h2, .valores h2 {
   color: #0284c7;
   margin-bottom: 1.2rem;
 }
 
+/* Lista inicio */
 .vision ul, .valores ul {
   list-style: none;
   padding-left: 0;
 }
 
+/* Elemento lista */
 .vision li, .valores li {
   margin-bottom: 1rem;
   padding-left: 2rem;
   position: relative;
 }
 
+/* Icono lista */
 .vision li::before, .valores li::before {
   content: "✓";
   position: absolute;
@@ -42,9 +47,10 @@
   font-weight: bold;
 }
 
-/* ==========================================
-    (Preciosyintalacion.html)
-   ========================================== */
+
+/* Panagdua ti Preciosyintalacion.html */
+
+/* Titulo precios */
 .tituloP h1 {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -52,12 +58,14 @@
   font-size: 2.2rem;
 }
 
+/* Cuadracula planes */
 .plans-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
+/* Tarjeta plan */
 .plan-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -69,18 +77,19 @@
   transition: all 0.3s ease;
 }
 
+/* Efecto tarjeta */
 .plan-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(2, 132, 199, 0.15);
 }
 
+/* Plan destacado */
 .plan-card.featured {
   border: 2px solid #0284c7;
   background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
 }
 
-
-
+/* Etiqueta destacada */
 .badge {
   position: absolute;
   top: -14px;
@@ -95,17 +104,20 @@
   box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);
 }
 
+/* Titulo plan */
 .plan-card h2 {
   color: #0f172a;
   font-size: 1.6rem;
 }
 
+/* Subtitulo plan */
 .plan-card h3 {
   color: #0284c7;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
+/* Precio plan */
 .plan-card h4 {
   font-size: 2rem;
   color: #0f172a;
@@ -113,15 +125,17 @@
   font-weight: 700;
 }
 
-/* ==========================================
-    (contacto.html)
-   ========================================== */
+
+/* Panagdua ti contacto.html */
+
+/* Seccion contacto */
 .contacto-seccion {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
+/* Tarjeta contacto */
 .informacion-contacto, .formulario-container {
   background: #ffffff;
   padding: 2.5rem;
@@ -130,21 +144,25 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
+/* Titulo contacto */
 .informacion-contacto h2, .formulario-container h2 {
   color: #0f172a;
   margin-bottom: 1.2rem;
 }
 
+/* Datos contacto */
 .dato-contacto {
   margin-top: 1.5rem;
   padding-left: 1rem;
   border-left: 3px solid #0284c7;
 }
 
+/* Campo formulario */
 .campo {
   margin-bottom: 1.2rem;
 }
 
+/* Etiqueta campo */
 .campo label {
   display: block;
   margin-bottom: 0.4rem;
@@ -152,6 +170,7 @@
   color: #475569;
 }
 
+/* Entrada texto */
 .campo input, .campo select, .campo textarea {
   width: 100%;
   padding: 0.8rem;
@@ -161,12 +180,14 @@
   transition: border-color 0.3s ease;
 }
 
+/* Enfoque entrada */
 .campo input:focus, .campo select:focus, .campo textarea:focus {
   outline: none;
   border-color: #0284c7;
   box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
+/* Boton enviar */
 .btn-enviar {
   background-color: #0284c7;
   color: #ffffff;
@@ -180,67 +201,17 @@
   transition: background-color 0.3s ease;
 }
 
+/* Efecto boton */
 .btn-enviar:hover {
   background-color: #0369a1;
 }
 
-/* ==========================================
-    (cobertura.html)
-   ========================================== */
+
+/* Panagdua ti cobertura.html */
+
+/* Bloques cobertura */
 .cobertura-header, .buscador-cobertura, .cobertura-principal, 
-.cobertura-alrededores, .info-factibilidad {
-  background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  border: 1px solid #e2e8f0;
-}
-
-.grid-zonas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.zona-card {
-  background: #f8fafc;
-  padding: 1.8rem;
-  border-radius: 10px;
-  border-top: 4px solid #0284c7;
-}
-
-.zona-card h3 {
-  color: #0f172a;
-  margin-bottom: 1rem;
-}
-
-#buscar-zona {
-  width: 100%;
-  padding: 0.9rem;
-  margin-top: 0.8rem;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-}
-
-/* ==========================================
-   (redesYcontenido.html)
-   ========================================== */
-.nosotros-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-}
-
-.mapa-box {
-  margin: 1.5rem 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-/* ==========================================
-   (cobertura.html)
-   ========================================== */
+.cobertura-alrededores, .info-factibilidad,
 .verificador-cobertura, .requisitos-tecnicos {
   background: #ffffff;
   padding: 2rem;
@@ -250,28 +221,82 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
+/* Titulos cobertura */
 .verificador-cobertura h2, .requisitos-tecnicos h2, .zonas-lista h2 {
   color: #0f172a;
   margin-bottom: 1rem;
 }
 
+/* Alignment zona */
 .zonas-lista h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
+/* Cuadracula zonas */
+.grid-zonas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Tarjeta zona */
+.zona-card {
+  background: #f8fafc;
+  padding: 1.8rem;
+  border-radius: 10px;
+  border-top: 4px solid #0284c7;
+}
+
+/* Titulo zona */
+.zona-card h3 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+/* Entrada busqueda */
+#buscar-zona {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+/* Lista requisitos */
 .requisitos-tecnicos ol {
   padding-left: 1.5rem;
 }
 
+/* Elemento requisito */
 .requisitos-tecnicos li {
   margin-bottom: 0.8rem;
 }
 
+/* Caja resultado */
 .resultado-box {
   padding: 1rem;
   border-radius: 8px;
   background-color: #e0f2fe;
   border: 1px solid #0284c7;
   color: #0369a1;
+}
+
+
+/* Panagdua ti redesYcontenido.html */
+
+/* Seccion nosotros */
+.nosotros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Caja mapa */
+.mapa-box {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }

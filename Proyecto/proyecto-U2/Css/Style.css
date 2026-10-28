@@ -1,35 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.navlista-enlaces {
-    display: flex;           
-    flex-direction: row;      
-    justify-content: center;
-    gap: 20px;              
-    background-color: #f0f0f0;
-    padding: 15px;          
-}
-
-.navlista-enlaces a {
-    text-decoration: none;   
-    color: #333;            
-    font-family: sans-serif; 
-    font-weight: bold;
-}
-
-.navlista-enlaces a:hover {
-    color: #007BFF;  }        
-/* ==========================================
-   RESET Y FUENTES
-   ========================================== */
+/* Limpieza inicial */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo base */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f1f5f9;
@@ -40,9 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* ==========================================
-   CABECERA Y NAVEGACIÓN
-   ========================================== */
+/* Barra superior */
 .header {
   background-color: #0f172a;
   display: flex;
@@ -56,28 +30,32 @@ body {
   border-bottom: 2px solid #0284c7;
 }
 
-/* AJUSTE DE TAMAÑO DEL LOGO */
+/* Tamaño logo */
 .logo-container .logo {
-  max-height: 100px; 
+  max-height: 80px; 
   width: auto;
   object-fit: contain;
   display: block;
   transition: transform 0.3s ease;
 }
 
+/* Efecto logo */
 .logo-container .logo:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
+/* Lista menú */
 .navlista-enlaces {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 1.5rem;
   align-items: center;
+  justify-content: center;
 }
 
+/* Enlaces menú */
 .navlista-enlaces a {
-  color: #000000;
+  color: #e2e8f0;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -86,14 +64,13 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Efecto enlaces */
 .navlista-enlaces a:hover {
   color: #ffffff;
   background-color: #0284c7;
 }
 
-/* ==========================================
-   ESTRUCTURA Y FOOTER
-   ========================================== */
+/* Contenido principal */
 main {
   flex: 1;
   width: 90%;
@@ -101,6 +78,7 @@ main {
   margin: 2.5rem auto;
 }
 
+/* Pie página */
 footer {
   background-color: #090d16;
   color: #94a3b8;
@@ -111,7 +89,7 @@ footer {
   border-top: 1px solid #1e293b;
 }
 
-/* Responsive */
+/* Vista móvil */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -126,6 +104,6 @@ footer {
   }
 
   .logo-container .logo {
-    max-height: 40px;
+    max-height: 50px;
   }
 }
