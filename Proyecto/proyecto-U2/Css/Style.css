@@ -58,7 +58,7 @@ body {
 
 /* AJUSTE DE TAMAÑO DEL LOGO */
 .logo-container .logo {
-  max-height: 100px; /* Controla la altura del logo */
+  max-height: 100px; 
   width: auto;
   object-fit: contain;
   display: block;
@@ -66,7 +66,7 @@ body {
 }
 
 .logo-container .logo:hover {
-  transform: scale(1.05); /* Efecto zoom sutil al pasar el mouse */
+  transform: scale(1.05); 
 }
 
 .navlista-enlaces {
@@ -111,7 +111,7 @@ footer {
   border-top: 1px solid #1e293b;
 }
 
-/* Responsive para pantallas pequeñas */
+/* Responsive */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
